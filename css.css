@@ -1,32 +1,48 @@
 body{
-    background: black;}
+    background-color: darkslategray;
+}
+
+
 #container{
+    width: 1000px;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#kula{
+    margin-left: 300px;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: inset 0px -34px 39px -24px rgba(66, 68, 90, 1);
+      position: absolute;
+    z-index: 10;
+
+}
+
+
+#container:hover > #kula{
+    margin-top: 409px;
+    transition-duration: 3s;
+    box-shadow: inset -47px -51px 39px -24px rgba(66, 68, 90, 1);
+      margin-left: 487px;
+}
+
+
+
+#container:hover > #podstawka{
+    width: 50px;
+    transition-duration: 3s;
+    
+}
+
+#podstawka{
+    width: 0px;
+    height: 100px;
     background: black;
-    width: 15px;
-    height: 14px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    text-align: center;
-    display: block;
-}
-
-.dd, .dde, .dew{
-    border-bottom: 1px solid red;
-    width: 16px;
-    height: 3px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-right: auto;
-}
-
-.bloczek{
-    display: block;
-}
-
-
-.bloczek:hover, .dd, .dde, .dew:{
-    transform: rotateY(30deg);
-    animation-duration: 3;
-    transition-duration: 2s;
-}
+    float: left;
+    margin-top: 455px;}
